@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      transition: background-color 0.5s ease;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .slide-up {
+      transform: translateY(20px);
+      animation: slideUp 1.5s ease-out forwards;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .full-width {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .responsive-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .text-center-responsive {
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #6c757d;
+      /* Calmer background color for footer */
+      color: #f8f9fa;
+    }
+
+    footer a {
+      color: #f8f9fa;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #e9ecef;
+    }
+  </style>
+  <title>Personal Portfolio</title>
+</head>
+
+<body class="bg-light text-dark">
+  <div class="container-fluid py-4 full-width ">
+    <!-- Header -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm fade-in">
+      <div class="container-fluid">
+        <a href="#home" class="navbar-brand ml-5 font-weight-bold hover-scale">Jekoyu<span
+            class="text-primary">.</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-5 mt-5 full-width">
+      <!-- Hero Section -->
+      <section id="home" class="py-5 ml-5 text-center fade-in">
+        <div class="row align-items-center full-width">
+          <div class="col-md-6 text-center-responsive">
+            <h1 class="display-4">Joko Yuliyanto</h1>
+            <p class="lead text-primary">Front End Engineer</p>
+            <p>
+              Saya adalah seorang Front End Engineer dengan keahlian dalam
+              HTML, CSS, JavaScript, dan framework lain seperti Bootstrap.
+            </p>
+            <a href="https://wa.me/62895421827822" class="btn btn-primary mt-3 hover-scale" target="_blank">Hire Me</a>
+            <a href="https://drive.google.com/file/d/1izLpX0Uzcwj6PafhUrRsD9L_KfrWd7YZ/view?usp=sharing"
+              class="btn btn-outline-primary mt-3 hover-scale" target="_blank">Download CV</a>
+          </div>
+          <div class="col-md-6">
+            <img src="mepersegi.JPG" alt="avatar" class="rounded-circle img-fluid slide-up responsive-image" width="50" height="50" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-5 bg-white slide-up full-width">
+        <div class="text-center mb-4">
+          <h2 class="display-5">About Me</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card shadow hover-scale">
+              <div class="card-body">
+                <h5 class="card-title">My Introduction</h5>
+                <p class="card-text">
+                  Nama saya Joko Yuliyanto. Saya lahir di
+                  Surakarta dan merupakan seorang Front End Developer serta
+                  Mobile Game Developer.
+                </p>
+                <a href="https://drive.google.com/file/d/1izLpX0Uzcwj6PafhUrRsD9L_KfrWd7YZ/view?usp=sharing"
+                  class="btn btn-primary" target="_blank">Download CV</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow mb-3 hover-scale">
+              <div class="card-body">
+                <h5 class="card-title">Skills</h5>
+                <span class="badge badge-primary mr-2">HTML</span>
+                <span class="badge badge-secondary mr-2">CSS</span>
+                <span class="badge badge-success mr-2">Bootstrap</span>
+                <span class="badge badge-warning mr-2">JavaScript</span>
+              </div>
+            </div>
+            <div class="card shadow hover-scale">
+              <div class="card-body">
+                <h5 class="card-title">Backend</h5>
+                <span class="badge badge-dark mr-2">PHP</span>
+                <span class="badge badge-info mr-2">Java</span>
+                <span class="badge badge-danger mr-2">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project List -->
+      <div class="mt-5 slide-up full-width">
+        <h3 class="text-center mb-4">Projects</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow hover-scale">
+              <div class="card-body text-center">
+                <h5 class="card-title">Blue Lagoon Website Landing Page</h5>
+                <p class="card-text">Beautiful and responsive design</p>
+                <a href="https://embed.figma.com/proto/SgA70o8mUZaBF2xMDQ6Hbx/Blue-Laggon?node-id=3-2&starting-point-node-id=3%3A2&embed-host=share"
+                  class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow hover-scale">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cikrak Mobile Application</h5>
+                <p class="card-text">Pro Management APP</p>
+                <a href="https://www.figma.com/design/6kTECDzOTnwMPwj1FhwzQF/Rill?node-id=0-1&t=bKNxVERoFRBKlzpp-1"
+                  class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow hover-scale">
+              <div class="card-body text-center">
+                <h5 class="card-title">Batik Kesayangan Mobile Application</h5>
+                <p class="card-text">E-Commerce For Batik Kesayangan</p>
+                <a href="https://www.figma.com/proto/33J5sFDmC7lVOgFazfnRZN/Implementasi-Desctop-dan-android?node-id=39-1691&node-type=frame&t=Jsqr4F5W4D9zVJ8h-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1352"
+                  class="btn btn-primary" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <section id="contact-social" class="py-5 bg-light full-width">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Sosmed Column -->
+            <div class="col-md-6 mb-4 slide-up">
+              <div class="card shadow h-100 hover-scale">
+                <div class="card-body">
+                  <h5 class="card-title">Find Me on Social Media</h5>
+                  <p><i class="uil uil-instagram mr-2"></i> <a href="https://www.instagram.com/muhammad_bintang.k"
+                      target="_blank">Instagram</a></p>
+                  <p><i class="uil uil-linkedin-alt mr-2"></i> <a href="https://www.linkedin.com/in/muhammad-bintang"
+                      target="_blank">LinkedIn</a></p>
+                  <p><i class="uil uil-whatsapp mr-2"></i> <a href="https://wa.me/62895421827822"
+                      target="_blank">WhatsApp</a></p>
+                  <p><i class="uil uil-github-alt mr-2"></i> <a href="https://github.com/muhammadBintang-k"
+                      target="_blank">GitHub</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- Form Column -->
+            <div class="col-md-6 mb-4 slide-up">
+              <div class="card shadow h-100 hover-scale">
+                <div class="card-body">
+                  <h5 class="card-title">Hubungi Saya</h5>
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center full-width">
+      <p>&copy; 2024 Joko Yuliyanto. All Rights Reserved.</p>
+      <div>
+        <a href="https://www.instagram.com/muhammad_bintang.k" class="text-white mr-2" target="_blank"><i
+            class="uil uil-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-bintang" class="text-white mr-2" target="_blank"><i
+            class="uil uil-linkedin-alt"></i></a>
+        <a href="https://wa.me/62895421827822" class="text-white mr-2" target="_blank"><i
+            class="uil uil-whatsapp"></i></a>
+        <a href="https://github.com/muhammadBintang-k" class="text-white" target="_blank"><i
+            class="uil uil-github-alt"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
